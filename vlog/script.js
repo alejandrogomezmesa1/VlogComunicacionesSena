@@ -3,7 +3,6 @@ const sliderFotos = [
 	{ src: 'img/Alejo3.png', caption: 'Alejandro Gómez' },
 	{ src: 'img/Alejo2.png', caption: 'Alejandro Gómez' },
 	{ src: 'img/samuelM.png', caption: 'Samuel Marín' },
-	{ src: 'img/samuelM.png', caption: 'Samuel Marín' },
 	{ src: 'img/SamuelP.jpg', caption: 'Samuel Pérez' },
 	{ src: 'img/SamuelP1.jpg', caption: 'Samuel Pérez' }
 ];
