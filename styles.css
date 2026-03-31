@@ -45,6 +45,8 @@ header h1 {
     background: none !important;
     -webkit-text-fill-color: initial !important;
     text-shadow: none !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
 }
 
 h1.display-5 {
@@ -58,7 +60,7 @@ h1.display-5 {
 /* ====== HEADER Y NAVBAR (REEMPLAZANDO .bg-primary) ====== */
 header.bg-primary,
 .navbar.bg-primary {
-    background: transparent !important;
+    background-color: var(--bg-dark) !important;
 }
 
 header {
@@ -66,7 +68,7 @@ header {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--glass-border);
-    padding: 1.5rem 0 !important;
+    padding: 0.5rem 0 !important;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -78,7 +80,7 @@ header {
     backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 1.5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.3rem 1rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
@@ -282,20 +284,21 @@ main.container {
 footer {
     background: transparent !important;
     border-top: 1px solid var(--glass-border);
-    padding: 3rem 0 2rem 0 !important;
-    margin-top: 5rem !important;
+    padding: 2rem 0 1.2rem 0 !important;
+    margin-top: 4rem !important;
     border-radius: 0 !important;
     box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #222 !important;
 }
 
 footer p {
-    font-size: 0.95rem;
-    font-weight: 300;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222 !important;
+    margin-bottom: 1.2rem;
     letter-spacing: 0.5px;
     background: none;
     -webkit-text-fill-color: initial;
@@ -310,6 +313,7 @@ footer p {
     gap: 1rem;
     width: 100%;
     padding: 0 1rem;
+    color: #222 !important;
 }
 
 .redes-integrante {
@@ -321,6 +325,7 @@ footer p {
     border: 1px solid rgba(255, 255, 255, 0.05);
     margin: 0.5rem;
     transition: all 0.3s;
+    color: #222 !important;
 }
 
 .redes-integrante:hover {
