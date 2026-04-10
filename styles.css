@@ -1,3 +1,262 @@
+/* ====== TÍTULO ESPECIAL PARA CARD VERBAL ====== */
+.titulo-verbal {
+    color: #fff;
+    background: linear-gradient(90deg, #d946ef 0%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 18px #d946ef99, 0 0 8px #fbbf2499;
+    letter-spacing: 0.04em;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/* ====== FONDO CONTRASTE PARA FORMAS Y ESTILOS DE COMUNICACIÓN ====== */
+.fondo-comunicacion-contraste {
+    background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
+    border-radius: 2.5rem;
+    box-shadow: 0 0 32px 0 #7c3aed22, 0 0 0 4px #fff1;
+    position: relative;
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+@media (max-width: 768px) {
+    .fondo-comunicacion-contraste {
+        border-radius: 1.2rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+}
+/* ====== NUEVO ESTILO PARA SECCIÓN REFLEXIÓN DIFERENTE ====== */
+.seccion-reflexion-nueva {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.reflexion-bg {
+    background: linear-gradient(120deg, #18181b 60%, #7c3aed 100%);
+    border-radius: 2.5rem;
+    box-shadow: 0 0 60px 0 #7c3aed55, 0 0 0 8px #fff1;
+    position: relative;
+    overflow: hidden;
+    padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+}
+.reflexion-glow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 80% 20%, #d946ef55 0%, transparent 70%),
+                            radial-gradient(circle at 20% 80%, #38bdf855 0%, transparent 70%);
+    z-index: 0;
+}
+.reflexion-titulo {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 24px #7c3aed, 0 0 8px #fff8;
+    position: relative;
+    z-index: 1;
+}
+.reflexion-etapas {
+    position: relative;
+    z-index: 1;
+}
+.etapa-reflexion {
+    background: #23232b;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    min-width: 210px;
+    max-width: 260px;
+    color: #fff;
+    box-shadow: 0 0 18px 0 #000a, 0 0 0 4px #fff1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.etapa-reflexion:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 0 32px 4px #d946ef99, 0 0 0 4px #fff2;
+}
+.etapa-num {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #d946ef;
+    text-shadow: 0 0 10px #d946ef99;
+}
+.etapa-1 .etapa-num { color: #f43f5e; text-shadow: 0 0 10px #f43f5e99; }
+.etapa-2 .etapa-num { color: #fbbf24; text-shadow: 0 0 10px #fbbf2499; }
+.etapa-3 .etapa-num { color: #38bdf8; text-shadow: 0 0 10px #38bdf899; }
+.etapa-4 .etapa-num { color: #a3e635; text-shadow: 0 0 10px #a3e63599; }
+.etapa-reflexion h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+.etapa-reflexion p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 0;
+}
+.etapa-cita {
+    font-size: 0.98rem;
+    color: #fff;
+    background: #7c3aed;
+    border-radius: 1rem;
+    padding: 0.7rem 1.2rem;
+    margin-top: 0.7rem;
+    box-shadow: 0 0 12px #7c3aed99;
+}
+.reflexion-final {
+    background: #fff;
+    color: #7c3aed;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 1.2rem;
+    padding: 1.1rem 1.5rem;
+    margin-top: 2.2rem;
+    box-shadow: 0 0 18px #7c3aed33;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.reflexion-final i {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+@media (max-width: 768px) {
+    .reflexion-bg {
+        padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+        border-radius: 1.2rem;
+    }
+    .reflexion-titulo {
+        font-size: 1.2rem;
+    }
+    .etapa-reflexion {
+        min-width: 140px;
+        max-width: 100%;
+        padding: 1rem 0.5rem 0.8rem 0.5rem;
+        border-radius: 0.7rem;
+    }
+    .reflexion-final {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+        border-radius: 0.7rem;
+    }
+}
+/* ====== NUEVO ESTILO DIFERENTE PARA LA GRID DE COMUNICACIÓN ====== */
+.grid-comunicacion-nueva {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.com-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 270px;
+    padding: 2.2rem 1.2rem 1.5rem 1.2rem;
+    border-radius: 2.5rem;
+    background: #18181b;
+    color: #fff;
+    box-shadow: 0 0 32px 0 rgba(0,0,0,0.45);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.25s, box-shadow 0.25s;
+    margin: 0 0.5rem;
+}
+.com-card:hover {
+    transform: scale(1.04) rotate(-1deg);
+    z-index: 2;
+    box-shadow: 0 0 40px 8px var(--accent-pink), 0 0 0 4px #fff2;
+}
+.com-icon {
+    font-size: 3.2rem;
+    margin-bottom: 1.1rem;
+    filter: drop-shadow(0 0 8px #fff8);
+}
+.com-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px #000a;
+}
+.com-desc {
+    font-size: 1.08rem;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* Efectos de neón por tipo */
+.neon-card {
+    box-shadow: 0 0 0 4px #fff1, 0 0 32px 0 #000a;
+    border: none;
+}
+.neon-blue {
+    box-shadow: 0 0 16px 2px #38bdf8, 0 0 0 4px #fff1;
+    border-left: 6px solid #38bdf8;
+}
+.neon-pink {
+    box-shadow: 0 0 16px 2px #d946ef, 0 0 0 4px #fff1;
+    border-left: 6px solid #d946ef;
+}
+.neon-yellow {
+    box-shadow: 0 0 16px 2px #fde047, 0 0 0 4px #fff1;
+    border-left: 6px solid #fde047;
+}
+.neon-green {
+    box-shadow: 0 0 16px 2px #10b981, 0 0 0 4px #fff1;
+    border-left: 6px solid #10b981;
+}
+.neon-orange {
+    box-shadow: 0 0 16px 2px #fb923c, 0 0 0 4px #fff1;
+    border-left: 6px solid #fb923c;
+}
+.neon-purple {
+    box-shadow: 0 0 16px 2px #a78bfa, 0 0 0 4px #fff1;
+    border-left: 6px solid #a78bfa;
+}
+@media (max-width: 768px) {
+    .com-card {
+        min-height: 200px;
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+        border-radius: 1.2rem;
+        margin: 0 0.1rem 1.2rem 0.1rem;
+    }
+    .com-title {
+        font-size: 1.1rem;
+    }
+    .com-icon {
+        font-size: 2.1rem;
+    }
+}
+/* ====== GRID DE ESTILOS DE COMUNICACIÓN ====== */
+.grid-comunicacion {
+    margin-bottom: 3rem;
+}
+.card-comunicacion {
+    border: 2px solid var(--glass-border);
+    box-shadow: 0 4px 24px rgba(139, 92, 246, 0.08);
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+.card-comunicacion:hover {
+    border-color: var(--accent-purple);
+    box-shadow: 0 8px 32px var(--primary-glow);
+}
+.icono-comunicacion {
+    font-size: 2.7rem;
+    color: var(--accent-purple);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 /* ====== CONFIGURACIÓN BASE Y VARIABLES ====== */
